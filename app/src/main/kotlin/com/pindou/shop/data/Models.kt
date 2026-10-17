@@ -9,8 +9,8 @@ data class Session(
     val price: Double,
     val start: Long,
     val end: Long,
-    val alertedPre: Boolean = false,
-    val alertedEnd: Boolean = false
+    var alertedPre: Boolean = false,
+    var alertedEnd: Boolean = false
 ) {
     fun toJson() = JSONObject().apply {
         put("customer", customer); put("pkgName", pkgName); put("price", price)
