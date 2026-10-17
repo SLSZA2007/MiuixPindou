@@ -32,7 +32,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.pindou.shop.data.Store
 import com.pindou.shop.data.Table
-import com.pindou.shop.ui.parseColor
+import com.pindou.shop.ui.theme.parseColor
 import org.json.JSONObject
 import top.yukonga.miuix.kmp.basic.Button
 import top.yukonga.miuix.kmp.basic.Card

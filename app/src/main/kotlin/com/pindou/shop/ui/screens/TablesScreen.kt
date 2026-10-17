@@ -38,7 +38,6 @@ import com.pindou.shop.data.Store
 import com.pindou.shop.data.Table
 import com.pindou.shop.service.ReminderService
 import com.pindou.shop.ui.endTimeOf
-import com.pindou.shop.ui.fmtCD
 import com.pindou.shop.ui.fmtDur
 import com.pindou.shop.ui.fmtTime
 import com.pindou.shop.ui.money
