@@ -35,15 +35,15 @@ data class DayPackage(val id: String, val name: String, val price: Double)
 
 data class Bill(
     val id: String, val type: String, val amount: Double, val note: String,
-    val customer: String, val time: Long, val struck: Boolean, val duration: Long?
+    val customer: String, val time: Long, var struck: Boolean, val duration: Long?
 )
 
 data class Deposit(
     val id: String, val name: String, val phone: String, val cabinet: String,
-    val time: Long, val done: Boolean
+    val time: Long, var done: Boolean
 )
 
-data class TaskItem(val id: String, val text: String, val done: Boolean, val time: Long)
+data class TaskItem(val id: String, val text: String, var done: Boolean, val time: Long)
 
 data class OpenHistory(
     val id: String, val time: Long, val table: String, val seat: String,
