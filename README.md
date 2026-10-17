@@ -69,7 +69,4 @@ MiuixPindou/
 - **计时提醒**：`ReminderService` 前台服务每秒检查，结束前 10 分钟与结束时发通知 + 闹钟铃声循环 + 震动。
 - **导入导出**：当前为占位实现（`SettingsScreen` 里 `exportData`/`importData` 待接入 SAF 文件选择器），其余功能已实现。
 
-## 常见问题
 
-- **依赖下载失败**：检查网络；Maven Central / Google 仓库需可达。可在 `settings.gradle.kts` 里加国内镜像（阿里云 Maven）。
-- **编译报「Unresolved reference: xxx」**：多是 miuix API 版本差异，告诉我具体报错，我来修。
