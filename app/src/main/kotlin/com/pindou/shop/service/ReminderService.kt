@@ -41,7 +41,12 @@ class ReminderService : Service() {
     override fun onCreate() {
         super.onCreate()
         createChannel()
-        startForeground(NOTIFY_ID, buildNotification("计时提醒服务运行中", false))
+        val notify = buildNotification("计时提醒服务运行中", false)
+        if (Build.VERSION.SDK_INT >= 34) {
+            startForeground(NOTIFY_ID, notify, android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE)
+        } else {
+            startForeground(NOTIFY_ID, notify)
+        }
         ticker = object : Runnable {
             override fun run() {
                 checkReminders()
